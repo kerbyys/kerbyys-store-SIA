@@ -1,0 +1,125 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f4f4f9;
+    padding: 20px;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.store-logo {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+h1 {
+    font-size: 1.8rem;
+    color: #222;
+}
+
+
+.table-container {
+    overflow-x: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+thead {
+    background-color: #000000;
+    color: white;
+}
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    font-weight: bold;
+}
+tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+tbody tr:hover {
+    background-color: #e2e8f0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.product-thumbnail {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 25px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+}
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.close-btn:hover, .close-btn:focus {
+    color: black;
+    text-decoration: none;
+}
+.modal-header {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-right: 20px;
+}
+.modal-image-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.modal-image {
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+.modal-details p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+.modal-desc {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 15px;
+}
+
+
